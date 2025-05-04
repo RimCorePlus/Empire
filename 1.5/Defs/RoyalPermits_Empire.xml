@@ -1,0 +1,110 @@
+<Defs>
+    <!--<uiPosition>(column,row)</uiPosition>-->
+    <!--row 0-->
+    <RoyalTitlePermitDef ParentName="DropResourcesBase">
+        <defName>CorePlus_WoodDrop</defName>
+        <label>wood drop</label>
+        <description>Call for a drop of 400 wood.</description>
+        <minTitle>Acolyte</minTitle>
+        <faction>Empire</faction>
+        <permitPointCost>1</permitPointCost>
+        <uiPosition>(1,0)</uiPosition>
+        <royalAid>
+            <itemsToDrop>
+                <WoodLog>400</WoodLog>
+            </itemsToDrop>
+            <favorCost>4</favorCost>
+        </royalAid>
+    </RoyalTitlePermitDef>
+    <RoyalTitlePermitDef ParentName="DropResourcesBase">
+        <defName>CorePlus_LeatherDrop</defName>
+        <label>leather drop</label>
+        <description>Call for a drop of 225 plainleather.</description>
+        <minTitle>Acolyte</minTitle>
+        <faction>Empire</faction>
+        <permitPointCost>1</permitPointCost>
+        <uiPosition>(2,0)</uiPosition>
+        <royalAid>
+            <itemsToDrop>
+                <Leather_Plain>225</Leather_Plain>
+            </itemsToDrop>
+            <favorCost>4</favorCost>
+        </royalAid>
+    </RoyalTitlePermitDef>
+    <!--row 1-->
+    <RoyalTitlePermitDef ParentName="DropResourcesBase">
+        <defName>CorePlus_FineFoodDrop</defName>
+        <label>fine food drop</label>
+        <description>Call for a drop of 20 fine meals.</description>
+        <minTitle>Acolyte</minTitle>
+        <uiPosition>(1,1)</uiPosition>
+        <royalAid>
+            <itemsToDrop>
+                <MealFine>20</MealFine>
+            </itemsToDrop>
+            <favorCost>6</favorCost>
+        </royalAid>
+    </RoyalTitlePermitDef>
+    <RoyalTitlePermitDef ParentName="DropResourcesBase">
+        <defName>CorePlus_LavishFoodDrop</defName>
+        <label>lavish food drop</label>
+        <description>Call for a drop of 20 lavish meals.</description>
+        <minTitle>Baron</minTitle>
+        <uiPosition>(2,1)</uiPosition>
+        <prerequisite>CorePlus_FineFoodDrop</prerequisite>
+        <royalAid>
+            <itemsToDrop>
+                <MealLavish>20</MealLavish>
+            </itemsToDrop>
+            <favorCost>8</favorCost>
+        </royalAid>
+        <cooldownDays Inherit="False">60</cooldownDays>
+    </RoyalTitlePermitDef>
+    <!--row 4-->
+    <RoyalTitlePermitDef ParentName="DropResourcesBase">
+        <defName>CorePlus_GoldDrop</defName>
+        <label>gold drop</label>
+        <description>Call for a drop of 75 gold.</description>
+        <minTitle>Praetor</minTitle>
+        <uiPosition>(1,4)</uiPosition>
+        <prerequisite>SilverDrop</prerequisite>
+        <royalAid>
+            <itemsToDrop>
+                <Gold>500</Gold>
+            </itemsToDrop>
+            <favorCost>8</favorCost>
+        </royalAid>
+        <cooldownDays Inherit="False">60</cooldownDays>
+    </RoyalTitlePermitDef>
+    <!--row 6-->
+    <RoyalTitlePermitDef ParentName="DropResourcesBase">
+        <defName>CorePlus_ChargeRifle</defName>
+        <label>charge rifle drop</label>
+        <description>Call for a single charge rifle drop.</description>
+        <minTitle>Count</minTitle>
+        <uiPosition>(1,6)</uiPosition>
+        <royalAid>
+            <itemsToDrop>
+                <Gun_ChargeRifle>1</Gun_ChargeRifle>
+                <Ammo_6x24mmCharged MayRequire="ceteam.combatextended">300</Ammo_6x24mmCharged>
+            </itemsToDrop>
+            <favorCost>10</favorCost>
+        </royalAid>
+        <cooldownDays Inherit="False">60</cooldownDays>
+    </RoyalTitlePermitDef>
+    <RoyalTitlePermitDef ParentName="DropResourcesBase">
+        <defName>CorePlus_PrestigeArmor</defName>
+        <label>prestige armor drop</label>
+        <description>Call for a drop of prestige recon armor.</description>
+        <minTitle>Count</minTitle>
+        <uiPosition>(2,6)</uiPosition>
+        <royalAid>
+            <itemsToDrop>
+                <Apparel_ArmorReconPrestige>1</Apparel_ArmorReconPrestige>
+                <Apparel_ArmorHelmetReconPrestige>1</Apparel_ArmorHelmetReconPrestige>
+            </itemsToDrop>
+            <favorCost>22</favorCost>
+        </royalAid>
+        <cooldownDays Inherit="False">180</cooldownDays>
+    </RoyalTitlePermitDef>
+</Defs>

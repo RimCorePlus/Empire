@@ -1,6 +1,6 @@
 ﻿<ModMetaData>
-	<packageId>boomer.modname</packageId>
-	<name>mod name</name>
+	<packageId>coreplus.empire</packageId>
+	<name>[CorePlus] Empire</name>
 	<author>boomer</author>
 	<description />
 	<supportedVersions>
@@ -11,12 +11,21 @@
 	<modIconPath IgnoreIfNoMatchingField="True" />
 	<url />
 	<descriptionsByVersion />
-	<modDependencies />
+	<modDependencies>
+		<li>
+			<packageId>Ludeon.RimWorld.Royalty</packageId>
+			<displayName>Royalty</displayName>
+		</li>
+	</modDependencies>
 	<modDependenciesByVersion />
-	<loadBefore />
+	<loadBefore>
+		<li>coreplus.industry.lumber</li>
+	</loadBefore>
 	<loadBeforeByVersion />
 	<forceLoadBefore />
-	<loadAfter />
+	<loadAfter>
+		<li>Ludeon.RimWorld.Royalty</li>
+	</loadAfter>
 	<loadAfterByVersion />
 	<forceLoadAfter />
 	<incompatibleWith />
