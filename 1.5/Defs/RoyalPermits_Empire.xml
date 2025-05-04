@@ -31,10 +31,40 @@
             <favorCost>4</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
+    <RoyalTitlePermitDef ParentName="DropResourcesBase">
+        <defName>CorePlus_ChemfuelDrop</defName>
+        <label>chemfuel drop</label>
+        <description>Call for a drop of 200 chemfuel.</description>
+        <minTitle>Knight</minTitle>
+        <faction>Empire</faction>
+        <permitPointCost>1</permitPointCost>
+        <uiPosition>(3,0)</uiPosition>
+        <royalAid>
+            <itemsToDrop>
+                <Chemfuel>200</Chemfuel>
+            </itemsToDrop>
+            <favorCost>4</favorCost>
+        </royalAid>
+    </RoyalTitlePermitDef>
+    <RoyalTitlePermitDef ParentName="DropResourcesBase">
+        <defName>CorePlus_NeutroamineDrop</defName>
+        <label>neutroamine drop</label>
+        <description>Call for a drop of 80 neutroamine.</description>
+        <minTitle>Praetor</minTitle>
+        <faction>Empire</faction>
+        <permitPointCost>1</permitPointCost>
+        <uiPosition>(4,0)</uiPosition>
+        <royalAid>
+            <itemsToDrop>
+                <Neutroamine>80</Neutroamine>
+            </itemsToDrop>
+            <favorCost>4</favorCost>
+        </royalAid>
+    </RoyalTitlePermitDef>
     <!--row 1-->
     <RoyalTitlePermitDef ParentName="DropResourcesBase">
         <defName>CorePlus_FineFoodDrop</defName>
-        <label>fine food drop</label>
+        <label>fine meal drop</label>
         <description>Call for a drop of 20 fine meals.</description>
         <minTitle>Acolyte</minTitle>
         <uiPosition>(1,1)</uiPosition>
@@ -42,12 +72,12 @@
             <itemsToDrop>
                 <MealFine>20</MealFine>
             </itemsToDrop>
-            <favorCost>6</favorCost>
+            <favorCost>4</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
     <RoyalTitlePermitDef ParentName="DropResourcesBase">
         <defName>CorePlus_LavishFoodDrop</defName>
-        <label>lavish food drop</label>
+        <label>lavish meal drop</label>
         <description>Call for a drop of 20 lavish meals.</description>
         <minTitle>Baron</minTitle>
         <uiPosition>(2,1)</uiPosition>
@@ -56,10 +86,105 @@
             <itemsToDrop>
                 <MealLavish>20</MealLavish>
             </itemsToDrop>
-            <favorCost>8</favorCost>
+            <favorCost>6</favorCost>
         </royalAid>
         <cooldownDays Inherit="False">60</cooldownDays>
     </RoyalTitlePermitDef>
+    <!--row 2-->
+    <!--WIP, need to break this off into the appropriate file structure and create a working quest script
+    <PawnKindDef ParentName="EmpireCommonerBase">
+        <defName>CorePlus_Empire_Common_Researcher</defName>
+        <label>imperial laborer</label>
+        <race>Human</race>
+        <defaultFactionType>Empire</defaultFactionType>
+        <maxGenerationAge>50</maxGenerationAge>
+        <combatPower>30</combatPower>
+        <backstoryFiltersOverride>
+            <li>
+                <categories>
+                    <li>ImperialCommon</li>
+                </categories>
+            </li>
+        </backstoryFiltersOverride>
+        <styleItemTags>
+            <li>
+                <tag>Soldier</tag>
+                <baseWeight>1</baseWeight>
+                <weightFactor>1</weightFactor>
+            </li>
+        </styleItemTags>
+        <backstoryCryptosleepCommonality>0.08</backstoryCryptosleepCommonality>
+        <forceNormalGearQuality>true</forceNormalGearQuality>
+        <isFighter>false</isFighter>
+        <requiredWorkTags>
+            <li>Intellectual</li>
+            <li>Caring</li>
+        </requiredWorkTags>
+        <disabledWorkTags>
+            <li>ManualDumb</li>
+            <li>Social</li>
+            <li>Animals</li>
+            <li>Cooking</li>
+            <li>Violent</li>
+            <li>PlantWork</li>
+            <li>Mining</li>
+            <li>Crafting</li>
+            <li>Artistic</li>
+        </disabledWorkTags>
+        <apparelTags>
+            <li>IndustrialBasic</li>
+        </apparelTags>
+        <apparelMoney>200~1000</apparelMoney>
+        <gearHealthRange>1~1</gearHealthRange>
+        <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+        <techHediffsMoney>50~800</techHediffsMoney>
+        <techHediffsTags>
+            <li>Poor</li>
+            <li>Simple</li>
+        </techHediffsTags>
+        <techHediffsChance>0.08</techHediffsChance>
+        <apparelDisallowTags>
+            <li>Western</li>
+        </apparelDisallowTags>
+        <disallowedTraits>
+            <li>Nudist</li>
+        </disallowedTraits>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>6~10</initialResistanceRange>
+        <useFactionXenotypes>false</useFactionXenotypes>
+        <xenotypeSet>
+            <xenotypeChances />
+        </xenotypeSet>
+        <skills>
+            <li>
+                <skill>Intellectual</skill>
+                <range>12~16</range>
+            </li>
+            <li>
+                <skill>Medicine</skill>
+                <range>12~16</range>
+            </li>
+        </skills>
+    </PawnKindDef>
+    <RoyalTitlePermitDef>
+        <defName>CorePlus_CallResearchTeam</defName>
+        <label>call research team</label>
+        <description>Call a group of 2 scientists to assist you for 4 days. These workers can only do research and medical tasks. You can control them as though they were your own colonists. You are required to keep them safe.</description>
+        <workerClass>RoyalTitlePermitWorker_CallLaborers</workerClass>
+        <minTitle>Count</minTitle>
+        <faction>Empire</faction>
+        <permitPointCost>1</permitPointCost>
+        <uiPosition>(2,2)</uiPosition>
+        <royalAid>
+            <favorCost>6</favorCost>
+            <pawnKindDef>CorePlus_Empire_Common_Researcher</pawnKindDef>
+            <pawnCount>2</pawnCount>
+            <aidDurationDays>4</aidDurationDays>
+            <targetingRange>44.9</targetingRange>
+            <targetingRequireLOS>false</targetingRequireLOS>
+        </royalAid>
+        <cooldownDays>60</cooldownDays>
+    </RoyalTitlePermitDef>-->
     <!--row 4-->
     <RoyalTitlePermitDef ParentName="DropResourcesBase">
         <defName>CorePlus_GoldDrop</defName>
@@ -67,7 +192,6 @@
         <description>Call for a drop of 75 gold.</description>
         <minTitle>Praetor</minTitle>
         <uiPosition>(1,4)</uiPosition>
-        <prerequisite>SilverDrop</prerequisite>
         <royalAid>
             <itemsToDrop>
                 <Gold>500</Gold>
