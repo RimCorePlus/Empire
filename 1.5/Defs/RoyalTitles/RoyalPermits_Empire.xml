@@ -91,7 +91,7 @@
         <cooldownDays Inherit="False">60</cooldownDays>
     </RoyalTitlePermitDef>
     <!--row 2-->
-    <!--WIP, need to break this off into the appropriate file structure and create a working quest script
+    <!--WIP, need to break this off into the appropriate file structure and create a working quest script to disable all work types except medical and research
     <PawnKindDef ParentName="EmpireCommonerBase">
         <defName>CorePlus_Empire_Common_Researcher</defName>
         <label>imperial laborer</label>
