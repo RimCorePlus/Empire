@@ -17,8 +17,7 @@ investigating:
 
 later:
 - write Medieval Overhaul patch
-
-## Analysis
+## Impact
 ### Awarded permit points
 The vanilla permit point progression is Acolyte + 1 -> Knight + 1 -> Praetor + 1 -> Baron + 1 -> Archon +1 -> 5 total permit points.
 
