@@ -2,31 +2,19 @@
 	<packageId>coreplus.empire</packageId>
 	<name>[CorePlus] Empire</name>
 	<author>boomer</author>
-	<description />
 	<supportedVersions>
 		<li>1.5</li>
 	</supportedVersions>
-	<modVersion />
-	<modIconPath IgnoreIfNoMatchingField="True" />
-	<url />
-	<descriptionsByVersion />
 	<modDependencies>
 		<li>
 			<packageId>Ludeon.RimWorld.Royalty</packageId>
 			<displayName>Royalty</displayName>
 		</li>
 	</modDependencies>
-	<modDependenciesByVersion />
 	<loadBefore>
 		<li>coreplus.industry</li>
 	</loadBefore>
-	<loadBeforeByVersion />
-	<forceLoadBefore />
 	<loadAfter>
 		<li>Ludeon.RimWorld.Royalty</li>
 	</loadAfter>
-	<loadAfterByVersion />
-	<forceLoadAfter />
-	<incompatibleWith />
-	<incompatibleWithByVersion />
 </ModMetaData>
