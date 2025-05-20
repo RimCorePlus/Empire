@@ -19,7 +19,7 @@
 	</modDependencies>
 	<modDependenciesByVersion />
 	<loadBefore>
-		<li>coreplus.industry.lumber</li>
+		<li>coreplus.industry</li>
 	</loadBefore>
 	<loadBeforeByVersion />
 	<forceLoadBefore />
