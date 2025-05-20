@@ -1,10 +1,11 @@
 ﻿<ModMetaData>
 	<packageId>coreplus.empire</packageId>
-	<name>[CorePlus] Empire</name>
+	<name>[RCP] Empire</name>
 	<author>boomer</author>
 	<supportedVersions>
 		<li>1.5</li>
 	</supportedVersions>
+	<url>https://github.com/RimCorePlus/Empire</url>
 	<modDependencies>
 		<li>
 			<packageId>Ludeon.RimWorld.Royalty</packageId>
