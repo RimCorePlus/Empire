@@ -1,5 +1,5 @@
 ﻿<ModMetaData>
-	<packageId>coreplus.empire</packageId>
+	<packageId>RCP.Empire</packageId>
 	<name>[RCP] Empire</name>
 	<author>boomer</author>
 	<supportedVersions>
@@ -13,7 +13,7 @@
 		</li>
 	</modDependencies>
 	<loadBefore>
-		<li>coreplus.industry</li>
+		<li>RCP.Industry</li>
 	</loadBefore>
 	<loadAfter>
 		<li>Ludeon.RimWorld.Royalty</li>
