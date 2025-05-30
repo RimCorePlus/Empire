@@ -1,7 +1,9 @@
 <Patch>
-    <Operation Class="VFECore.PatchOperationToggableSequence">
-        <enabled>true</enabled>
+    <Operation Class="ModSettingsFramework.PatchOperationModOption">
+        <defaultValue>true</defaultValue>
         <label>Better deserter</label>
+        <id>RCP_EmpireBetterDeserter</id>
+        <category>RCP_EmpirePatches</category>
         <operations>
             <li Class="PatchOperationAttributeSet">
                 <xpath>//PawnKindDef[defName="Empire_Fighter_Trooper"]</xpath>
@@ -56,9 +58,11 @@
             </li>
         </operations>
     </Operation>
-    <Operation Class="VFECore.PatchOperationToggableSequence">
-        <enabled>false</enabled>
+    <Operation Class="ModSettingsFramework.PatchOperationModOption">
+        <defaultValue>false</defaultValue>
         <label>Deserter always female</label>
+        <id>RCP_EmpireFemaleDeserter</id>
+        <category>RCP_EmpirePatches</category>
         <operations>
             <li Class="PatchOperationAdd">
                 <xpath>//PawnKindDef[defName="Empire_Fighter_Trooper"]</xpath>
