@@ -1,0 +1,75 @@
+<Patch>
+    <Operation Class="ModSettingsFramework.PatchOperationModOption">
+        <defaultValue>true</defaultValue>
+        <label>Better deserter</label>
+        <id>RCP_EmpireBetterDeserter</id>
+        <category>RCP_EmpirePatches</category>
+        <operations>
+            <li Class="PatchOperationAttributeSet">
+                <xpath>//PawnKindDef[defName="Empire_Fighter_Trooper"]</xpath>
+                <attribute>Name</attribute>
+                <value>RCP_ImperialTrooper</value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs</xpath>
+                <value>
+                    <PawnKindDef ParentName="RCP_ImperialTrooper">
+                        <defName>RCP_BetterDeserter</defName>
+                        <disallowedTraits>
+                            <li>CreepyBreathing</li>
+                            <li>Greedy</li>
+                            <li>Jealous</li>
+                            <li>Nudist</li>
+                            <li>SlowLearner</li>
+                            <li>Wimp</li>
+                        </disallowedTraits>
+                        <disallowedTraitsWithDegree>
+                            <Beauty>-1</Beauty>
+                            <Beauty>-2</Beauty>
+                            <!--seems to ignore DrugDesire 1-->
+                            <DrugDesire>1</DrugDesire>
+                            <DrugDesire>2</DrugDesire>
+                            <Immunity>-1</Immunity>
+                            <Industriousness>-1</Industriousness>
+                            <Industriousness>-2</Industriousness>
+                            <NaturalMood>-1</NaturalMood>
+                            <NaturalMood>-2</NaturalMood>
+                            <SpeedOffset>-1</SpeedOffset>
+                        </disallowedTraitsWithDegree>
+                        <maxGenerationAge>30</maxGenerationAge>
+                        <requiredWorkTags>
+                            <li>Caring</li>
+                            <li>ManualSkilled</li>
+                            <li>Social</li>
+                        </requiredWorkTags>
+                        <skills>
+                            <li>
+                                <skill>Shooting</skill>
+                                <range>6~12</range>
+                            </li>
+                        </skills>
+                        <xenotypeSet Inherit="False" />
+                    </PawnKindDef>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>//QuestScriptDef[defName="Intro_Deserter"]/root/nodes/li[storeAs[text()="asker"]]/kindDef/text()</xpath>
+                <value>RCP_BetterDeserter</value>
+            </li>
+        </operations>
+    </Operation>
+    <Operation Class="ModSettingsFramework.PatchOperationModOption">
+        <defaultValue>false</defaultValue>
+        <label>Deserter always female</label>
+        <id>RCP_EmpireFemaleDeserter</id>
+        <category>RCP_EmpirePatches</category>
+        <operations>
+            <li Class="PatchOperationAdd">
+                <xpath>//PawnKindDef[defName="Empire_Fighter_Trooper"]</xpath>
+                <value>
+                    <fixedGender>Female</fixedGender>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+</Patch>

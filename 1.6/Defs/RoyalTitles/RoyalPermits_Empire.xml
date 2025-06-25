@@ -1,0 +1,234 @@
+<Defs>
+    <!--<uiPosition>(column,row)</uiPosition>-->
+    <!--row 0-->
+    <RoyalTitlePermitDef ParentName="DropResourcesBase">
+        <defName>RCP_WoodDrop</defName>
+        <label>wood drop</label>
+        <description>Call for a drop of 400 wood.</description>
+        <minTitle>Acolyte</minTitle>
+        <faction>Empire</faction>
+        <permitPointCost>1</permitPointCost>
+        <uiPosition>(1,0)</uiPosition>
+        <royalAid>
+            <itemsToDrop>
+                <WoodLog>400</WoodLog>
+            </itemsToDrop>
+            <favorCost>4</favorCost>
+        </royalAid>
+    </RoyalTitlePermitDef>
+    <RoyalTitlePermitDef ParentName="DropResourcesBase">
+        <defName>RCP_LeatherDrop</defName>
+        <label>leather drop</label>
+        <description>Call for a drop of 225 plainleather.</description>
+        <minTitle>Acolyte</minTitle>
+        <faction>Empire</faction>
+        <permitPointCost>1</permitPointCost>
+        <uiPosition>(2,0)</uiPosition>
+        <royalAid>
+            <itemsToDrop>
+                <Leather_Plain>225</Leather_Plain>
+            </itemsToDrop>
+            <favorCost>4</favorCost>
+        </royalAid>
+    </RoyalTitlePermitDef>
+    <RoyalTitlePermitDef ParentName="DropResourcesBase">
+        <defName>RCP_ChemfuelDrop</defName>
+        <label>chemfuel drop</label>
+        <description>Call for a drop of 200 chemfuel.</description>
+        <minTitle>Knight</minTitle>
+        <faction>Empire</faction>
+        <permitPointCost>1</permitPointCost>
+        <uiPosition>(3,0)</uiPosition>
+        <royalAid>
+            <itemsToDrop>
+                <Chemfuel>200</Chemfuel>
+            </itemsToDrop>
+            <favorCost>4</favorCost>
+        </royalAid>
+    </RoyalTitlePermitDef>
+    <RoyalTitlePermitDef ParentName="DropResourcesBase">
+        <defName>RCP_NeutroamineDrop</defName>
+        <label>neutroamine drop</label>
+        <description>Call for a drop of 80 neutroamine.</description>
+        <minTitle>Praetor</minTitle>
+        <faction>Empire</faction>
+        <permitPointCost>1</permitPointCost>
+        <uiPosition>(4,0)</uiPosition>
+        <royalAid>
+            <itemsToDrop>
+                <Neutroamine>80</Neutroamine>
+            </itemsToDrop>
+            <favorCost>4</favorCost>
+        </royalAid>
+    </RoyalTitlePermitDef>
+    <!--row 1-->
+    <RoyalTitlePermitDef ParentName="DropResourcesBase">
+        <defName>RCP_FineFoodDrop</defName>
+        <label>fine meal drop</label>
+        <description>Call for a drop of 20 fine meals.</description>
+        <minTitle>Acolyte</minTitle>
+        <uiPosition>(1,1)</uiPosition>
+        <royalAid>
+            <itemsToDrop>
+                <MealFine>20</MealFine>
+            </itemsToDrop>
+            <favorCost>4</favorCost>
+        </royalAid>
+    </RoyalTitlePermitDef>
+    <RoyalTitlePermitDef ParentName="DropResourcesBase">
+        <defName>RCP_LavishFoodDrop</defName>
+        <label>lavish meal drop</label>
+        <description>Call for a drop of 20 lavish meals.</description>
+        <minTitle>Baron</minTitle>
+        <uiPosition>(2,1)</uiPosition>
+        <prerequisite>RCP_FineFoodDrop</prerequisite>
+        <royalAid>
+            <itemsToDrop>
+                <MealLavish>20</MealLavish>
+            </itemsToDrop>
+            <favorCost>6</favorCost>
+        </royalAid>
+        <cooldownDays Inherit="False">60</cooldownDays>
+    </RoyalTitlePermitDef>
+    <!--row 2-->
+    <!--WIP, need to break this off into the appropriate file structure and create a working quest script to disable all work types except medical and research
+    <PawnKindDef ParentName="EmpireCommonerBase">
+        <defName>RCP_Empire_Common_Researcher</defName>
+        <label>imperial laborer</label>
+        <race>Human</race>
+        <defaultFactionType>Empire</defaultFactionType>
+        <maxGenerationAge>50</maxGenerationAge>
+        <combatPower>30</combatPower>
+        <backstoryFiltersOverride>
+            <li>
+                <categories>
+                    <li>ImperialCommon</li>
+                </categories>
+            </li>
+        </backstoryFiltersOverride>
+        <styleItemTags>
+            <li>
+                <tag>Soldier</tag>
+                <baseWeight>1</baseWeight>
+                <weightFactor>1</weightFactor>
+            </li>
+        </styleItemTags>
+        <backstoryCryptosleepCommonality>0.08</backstoryCryptosleepCommonality>
+        <forceNormalGearQuality>true</forceNormalGearQuality>
+        <isFighter>false</isFighter>
+        <requiredWorkTags>
+            <li>Intellectual</li>
+            <li>Caring</li>
+        </requiredWorkTags>
+        <disabledWorkTags>
+            <li>ManualDumb</li>
+            <li>Social</li>
+            <li>Animals</li>
+            <li>Cooking</li>
+            <li>Violent</li>
+            <li>PlantWork</li>
+            <li>Mining</li>
+            <li>Crafting</li>
+            <li>Artistic</li>
+        </disabledWorkTags>
+        <apparelTags>
+            <li>IndustrialBasic</li>
+        </apparelTags>
+        <apparelMoney>200~1000</apparelMoney>
+        <gearHealthRange>1~1</gearHealthRange>
+        <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+        <techHediffsMoney>50~800</techHediffsMoney>
+        <techHediffsTags>
+            <li>Poor</li>
+            <li>Simple</li>
+        </techHediffsTags>
+        <techHediffsChance>0.08</techHediffsChance>
+        <apparelDisallowTags>
+            <li>Western</li>
+        </apparelDisallowTags>
+        <disallowedTraits>
+            <li>Nudist</li>
+        </disallowedTraits>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>6~10</initialResistanceRange>
+        <useFactionXenotypes>false</useFactionXenotypes>
+        <xenotypeSet>
+            <xenotypeChances />
+        </xenotypeSet>
+        <skills>
+            <li>
+                <skill>Intellectual</skill>
+                <range>12~16</range>
+            </li>
+            <li>
+                <skill>Medicine</skill>
+                <range>12~16</range>
+            </li>
+        </skills>
+    </PawnKindDef>
+    <RoyalTitlePermitDef>
+        <defName>RCP_CallResearchTeam</defName>
+        <label>call research team</label>
+        <description>Call a group of 2 scientists to assist you for 4 days. These workers can only do research and medical tasks. You can control them as though they were your own colonists. You are required to keep them safe.</description>
+        <workerClass>RoyalTitlePermitWorker_CallLaborers</workerClass>
+        <minTitle>Count</minTitle>
+        <faction>Empire</faction>
+        <permitPointCost>1</permitPointCost>
+        <uiPosition>(2,2)</uiPosition>
+        <royalAid>
+            <favorCost>6</favorCost>
+            <pawnKindDef>RCP_Empire_Common_Researcher</pawnKindDef>
+            <pawnCount>2</pawnCount>
+            <aidDurationDays>4</aidDurationDays>
+            <targetingRange>44.9</targetingRange>
+            <targetingRequireLOS>false</targetingRequireLOS>
+        </royalAid>
+        <cooldownDays>60</cooldownDays>
+    </RoyalTitlePermitDef>-->
+    <!--row 4-->
+    <RoyalTitlePermitDef ParentName="DropResourcesBase">
+        <defName>RCP_GoldDrop</defName>
+        <label>gold drop</label>
+        <description>Call for a drop of 75 gold.</description>
+        <minTitle>Praetor</minTitle>
+        <uiPosition>(1,4)</uiPosition>
+        <royalAid>
+            <itemsToDrop>
+                <Gold>500</Gold>
+            </itemsToDrop>
+            <favorCost>8</favorCost>
+        </royalAid>
+        <cooldownDays Inherit="False">60</cooldownDays>
+    </RoyalTitlePermitDef>
+    <!--row 6-->
+    <RoyalTitlePermitDef ParentName="DropResourcesBase">
+        <defName>RCP_ChargeRifle</defName>
+        <label>charge rifle drop</label>
+        <description>Call for a single charge rifle drop.</description>
+        <minTitle>Count</minTitle>
+        <uiPosition>(1,6)</uiPosition>
+        <royalAid>
+            <itemsToDrop>
+                <Gun_ChargeRifle>1</Gun_ChargeRifle>
+                <Ammo_6x24mmCharged MayRequire="ceteam.combatextended">300</Ammo_6x24mmCharged>
+            </itemsToDrop>
+            <favorCost>10</favorCost>
+        </royalAid>
+        <cooldownDays Inherit="False">60</cooldownDays>
+    </RoyalTitlePermitDef>
+    <RoyalTitlePermitDef ParentName="DropResourcesBase">
+        <defName>RCP_PrestigeArmor</defName>
+        <label>prestige armor drop</label>
+        <description>Call for a drop of prestige recon armor.</description>
+        <minTitle>Count</minTitle>
+        <uiPosition>(2,6)</uiPosition>
+        <royalAid>
+            <itemsToDrop>
+                <Apparel_ArmorReconPrestige>1</Apparel_ArmorReconPrestige>
+                <Apparel_ArmorHelmetReconPrestige>1</Apparel_ArmorHelmetReconPrestige>
+            </itemsToDrop>
+            <favorCost>22</favorCost>
+        </royalAid>
+        <cooldownDays Inherit="False">180</cooldownDays>
+    </RoyalTitlePermitDef>
+</Defs>
