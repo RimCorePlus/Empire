@@ -1,16 +1,15 @@
 <Patch>
-    <Operation Class="ModSettingsFramework.PatchOperationModOption">
+    <Operation Class="XmlExtensions.OptionalPatch">
+        <modId>RCP.Empire</modId>
+        <key>RCPEmpireBetterDeserter</key>
         <defaultValue>true</defaultValue>
-        <label>Better deserter</label>
-        <id>RCP_EmpireBetterDeserter</id>
-        <category>RCP_EmpirePatches</category>
-        <operations>
-            <li Class="PatchOperationAttributeSet">
+        <caseTrue>
+            <Operation Class="PatchOperationAttributeSet">
                 <xpath>//PawnKindDef[defName="Empire_Fighter_Trooper"]</xpath>
                 <attribute>Name</attribute>
                 <value>RCP_ImperialTrooper</value>
-            </li>
-            <li Class="PatchOperationAdd">
+            </Operation>
+            <Operation Class="PatchOperationAdd">
                 <xpath>Defs</xpath>
                 <value>
                     <PawnKindDef ParentName="RCP_ImperialTrooper">
@@ -51,25 +50,24 @@
                         <xenotypeSet Inherit="False" />
                     </PawnKindDef>
                 </value>
-            </li>
-            <li Class="PatchOperationReplace">
+            </Operation>
+            <Operation Class="PatchOperationReplace">
                 <xpath>//QuestScriptDef[defName="Intro_Deserter"]/root/nodes/li[storeAs[text()="asker"]]/kindDef/text()</xpath>
                 <value>RCP_BetterDeserter</value>
-            </li>
-        </operations>
+            </Operation>
+        </caseTrue>
     </Operation>
-    <Operation Class="ModSettingsFramework.PatchOperationModOption">
+    <Operation Class="XmlExtensions.OptionalPatch">
+        <modId>RCP.Empire</modId>
+        <key>RCPEmpireFemaleDeserter</key>
         <defaultValue>false</defaultValue>
-        <label>Deserter always female</label>
-        <id>RCP_EmpireFemaleDeserter</id>
-        <category>RCP_EmpirePatches</category>
-        <operations>
-            <li Class="PatchOperationAdd">
+        <caseTrue>
+            <Operation Class="PatchOperationAdd">
                 <xpath>//PawnKindDef[defName="Empire_Fighter_Trooper"]</xpath>
                 <value>
                     <fixedGender>Female</fixedGender>
                 </value>
-            </li>
-        </operations>
+            </Operation>
+        </caseTrue>
     </Operation>
 </Patch>

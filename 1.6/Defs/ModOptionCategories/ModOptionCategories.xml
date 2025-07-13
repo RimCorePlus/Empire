@@ -1,8 +1,0 @@
-<Defs>
-    <ModSettingsFramework.ModOptionCategoryDef>
-        <defName>RCP_EmpirePatches</defName>
-        <label>Misc. Patches</label>
-        <modSettingsName>[RCP] Empire</modSettingsName>
-        <modPackageSettingsID>RCP.Empire</modPackageSettingsID>
-    </ModSettingsFramework.ModOptionCategoryDef>
-</Defs>
