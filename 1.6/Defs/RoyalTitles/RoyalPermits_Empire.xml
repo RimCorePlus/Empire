@@ -200,6 +200,20 @@
         </royalAid>
         <cooldownDays Inherit="False">60</cooldownDays>
     </RoyalTitlePermitDef>
+    <RoyalTitlePermitDef MayRequire="Ludeon.Rimworld.Odyssey" ParentName="DropResourcesBase">
+        <defName>RCP_GravliteDrop</defName>
+        <label>gravlite drop</label>
+        <description>Call for a drop of 150 gravlite panels.</description>
+        <minTitle>Praetor</minTitle>
+        <uiPosition>(2,4)</uiPosition>
+        <royalAid>
+            <itemsToDrop>
+                <GravlitePanel>150</GravlitePanel>
+            </itemsToDrop>
+            <favorCost>8</favorCost>
+        </royalAid>
+        <cooldownDays Inherit="False">60</cooldownDays>
+    </RoyalTitlePermitDef>
     <!--row 6-->
     <RoyalTitlePermitDef ParentName="DropResourcesBase">
         <defName>RCP_ChargeRifle</defName>

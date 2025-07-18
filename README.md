@@ -54,16 +54,6 @@ This only provides 5 medicine, worth 250 market value. It's great for single-paw
 
 It's a negligible net daily value increase (5.55 -> 8.33) that brings it closer to the rest of the vanilla permits. This also makes it possible to cure paralytic abasia and blood rot for one pawn with a single drop, and makes bioregeneration cycles more viable for colonies with royal pawns.
 
-### Gold/silver drop
-|  | Silver drop | Gold drop |
-|---:|:---:|:---:|
-| Value | 500 | 750 ($75*10$) |
-| Cooldown | 45 | 60 |
-| Title | Knight | Praetor |
-| Favor | 6 | 8 |
-
-A Grand Meditation Throne costs 75 gold, and is required (for the first time) to rank up from Praetor to Baron. Gold drop will provide the most value at this rank. I think this adds a lot of value, especially for people who can't mine gold or haven't won the orbital trader RNG war, without feeling OP or out of place.
-
 ### Resource drop
 |  | Steel drop | Wood drop | Leather drop | Chemfuel drop | Neutroamine drop |
 |---:|:---:|:---:|:---:|:---:|:---:|
@@ -71,3 +61,13 @@ A Grand Meditation Throne costs 75 gold, and is required (for the first time) to
 | Title | Acolyte | Acolyte | Acolyte | Knight | Knight |
 
 The new drops are almost identical to steel drop and share the same row in the permit menu. They have no permit prerequisites. The goal is to make acquiring a royal title more attractive for players who may not have abundant access to trees or wild animals (deserts, ice sheet, etc). They are balanced around market value, not subjective value.
+
+### Valuable resource drops
+|  | Silver drop | Gold drop | Gravlite drop |
+|---:|:---:|:---:|:---:|
+| Value | 500 | 750 ($75*10$) | 600 ($150*4$) |
+| Cooldown | 45 | 60 | 60 |
+| Title | Knight | Praetor | Praetor |
+| Favor | 6 | 8 | 8 |
+
+A Grand Meditation Throne costs 75 gold, and is required (for the first time) to rank up from Praetor to Baron. Gold drop will provide the most value at this rank. I think this adds a lot of value, especially for people who can't mine gold or haven't won the orbital trader RNG war, without feeling OP or out of place.
