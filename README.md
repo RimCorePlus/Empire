@@ -11,7 +11,7 @@
 <!--![Supports Odyssey][badge-dlc-odyssey] supports Odyssey DLC-->
 [badge-dlc-odyssey]: https://img.shields.io/badge/DLC-Odyssey-mediumpurple
 
-# [RCP] Rebalance
+# [RCP] Empire
 ![](About/Preview.png)\
 [![GPLv3][badge-license]](https://www.gnu.org/licenses/gpl-3.0) ![Supports Royalty][badge-dlc-royalty]
 
