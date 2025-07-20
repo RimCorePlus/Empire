@@ -50,13 +50,28 @@
         <defName>RCP_NeutroamineDrop</defName>
         <label>neutroamine drop</label>
         <description>Call for a drop of 80 neutroamine.</description>
-        <minTitle>Praetor</minTitle>
+        <minTitle>Knight</minTitle>
         <faction>Empire</faction>
         <permitPointCost>1</permitPointCost>
         <uiPosition>(4,0)</uiPosition>
         <royalAid>
             <itemsToDrop>
                 <Neutroamine>80</Neutroamine>
+            </itemsToDrop>
+            <favorCost>4</favorCost>
+        </royalAid>
+    </RoyalTitlePermitDef>
+    <RoyalTitlePermitDef MayRequire="Ludeon.RimWorld.Anomaly" ParentName="DropResourcesBase">
+        <defName>RCP_BioferriteDrop</defName>
+        <label>bioferrite drop</label>
+        <description>Call for a drop of 600 bioferrite.</description>
+        <minTitle>Knight</minTitle>
+        <faction>Empire</faction>
+        <permitPointCost>1</permitPointCost>
+        <uiPosition>(5,0)</uiPosition>
+        <royalAid>
+            <itemsToDrop>
+                <Bioferrite>600</Bioferrite>
             </itemsToDrop>
             <favorCost>4</favorCost>
         </royalAid>
@@ -200,12 +215,26 @@
         </royalAid>
         <cooldownDays Inherit="False">60</cooldownDays>
     </RoyalTitlePermitDef>
+    <RoyalTitlePermitDef MayRequire="Ludeon.Rimworld.Biotech" ParentName="DropResourcesBase">
+        <defName>RCP_CapsuleDrop</defName>
+        <label>capsule drop</label>
+        <description>Call for a drop of 3 archite capsules.</description>
+        <minTitle>Praetor</minTitle>
+        <uiPosition>(2,4)</uiPosition>
+        <royalAid>
+            <itemsToDrop>
+                <ArchiteCapsule>3</ArchiteCapsule>
+            </itemsToDrop>
+            <favorCost>8</favorCost>
+        </royalAid>
+        <cooldownDays Inherit="False">60</cooldownDays>
+    </RoyalTitlePermitDef>
     <RoyalTitlePermitDef MayRequire="Ludeon.Rimworld.Odyssey" ParentName="DropResourcesBase">
         <defName>RCP_GravliteDrop</defName>
         <label>gravlite drop</label>
         <description>Call for a drop of 150 gravlite panels.</description>
         <minTitle>Praetor</minTitle>
-        <uiPosition>(2,4)</uiPosition>
+        <uiPosition>(3,4)</uiPosition>
         <royalAid>
             <itemsToDrop>
                 <GravlitePanel>150</GravlitePanel>

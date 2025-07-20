@@ -8,16 +8,26 @@
 [badge-dlc-biotech]: https://img.shields.io/badge/DLC-Biotech-mediumturquoise
 <!--![Supports Anomaly][badge-dlc-anomaly] supports Anomaly DLC-->
 [badge-dlc-anomaly]: https://img.shields.io/badge/DLC-Anomaly-darkseagreen
+<!--![Supports Odyssey][badge-dlc-odyssey] supports Odyssey DLC-->
+[badge-dlc-odyssey]: https://img.shields.io/badge/DLC-Odyssey-mediumpurple
 
-## To-do
-investigating:
-- additional permits
-- vanilla permit rebalance
-- new scenario and a player faction
+# [RCP] Rebalance
+![](About/Preview.png)\
+[![GPLv3][badge-license]](https://www.gnu.org/licenses/gpl-3.0) ![Supports Royalty][badge-dlc-royalty]
 
-later:
-- write Medieval Overhaul patch
-## Impact
+> [!IMPORTANT]
+> Requires [RimWorld Royalty](https://store.steampowered.com/app/1149640/RimWorld__Royalty/).\
+> Use [XML Extensions](https://steamcommunity.com/sharedfiles/filedetails/?id=2574315206) for settings (optional).
+
+## Deserter Overhaul
+- Better Deserter (enabled by default)
+- - Prevents spawning with undesireable traits.
+- - Must be capable of caring, skilled labor, and social.
+- - Shooting skill between 6 and 12.
+- - Always baseliner, no more hussars.
+- Deserter Always Female (disabled by default)
+
+## Permits
 ### Awarded permit points
 The vanilla permit point progression is Acolyte + 1 -> Knight + 1 -> Praetor + 1 -> Baron + 1 -> Archon +1 -> 5 total permit points.
 
@@ -55,19 +65,19 @@ This only provides 5 medicine, worth 250 market value. It's great for single-paw
 It's a negligible net daily value increase (5.55 -> 8.33) that brings it closer to the rest of the vanilla permits. This also makes it possible to cure paralytic abasia and blood rot for one pawn with a single drop, and makes bioregeneration cycles more viable for colonies with royal pawns.
 
 ### Resource drop
-|  | Steel drop | Wood drop | Leather drop | Chemfuel drop | Neutroamine drop |
-|---:|:---:|:---:|:---:|:---:|:---:|
-| Value | 475 ($250*1.9$) | 480 ($400*1.2$) | 472 ($225*2.1$) | 460 ($200*2.3$) | 480 ($80*6)
-| Title | Acolyte | Acolyte | Acolyte | Knight | Knight |
+|  | Steel drop | Wood drop | Leather drop | Chemfuel drop | Neutroamine drop | Bioferrite drop |
+|---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| Value | 475 ($250*1.9$) | 480 ($400*1.2$) | 472 ($225*2.1$) | 460 ($200*2.3$) | 480 ($80*6$) | 450 ($600*0.75$) |
+| Title | Acolyte | Acolyte | Acolyte | Knight | Knight | Knight |
 
 The new drops are almost identical to steel drop and share the same row in the permit menu. They have no permit prerequisites. The goal is to make acquiring a royal title more attractive for players who may not have abundant access to trees or wild animals (deserts, ice sheet, etc). They are balanced around market value, not subjective value.
 
 ### Valuable resource drops
-|  | Silver drop | Gold drop | Gravlite drop |
-|---:|:---:|:---:|:---:|
-| Value | 500 | 750 ($75*10$) | 600 ($150*4$) |
-| Cooldown | 45 | 60 | 60 |
-| Title | Knight | Praetor | Praetor |
-| Favor | 6 | 8 | 8 |
+|  | Silver drop | Gold drop | Archite Capsule drop | Gravlite drop |
+|---:|:---:|:---:|:---:|:---:|
+| Value | 500 | 750 ($75*10$) | 600 ($3*200$) | 600 ($150*4$) |
+| Cooldown | 45 | 60 | 60 | 60 |
+| Title | Knight | Praetor | Praetor | Praetor |
+| Favor | 6 | 8 | 8 | 8 |
 
 A Grand Meditation Throne costs 75 gold, and is required (for the first time) to rank up from Praetor to Baron. Gold drop will provide the most value at this rank. I think this adds a lot of value, especially for people who can't mine gold or haven't won the orbital trader RNG war, without feeling OP or out of place.

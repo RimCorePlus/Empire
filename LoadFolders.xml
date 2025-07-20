@@ -1,12 +1,9 @@
 <loadFolders>
-    <v1.5>
-        <li>/</li>
-        <li>1.5</li>
-        <li>Common</li>
-    </v1.5>
     <v1.6>
         <li>/</li>
         <li>1.6</li>
         <li>Common</li>
+        <li IfModActive="imranfish.xmlextensions">Mods/XML Extensions/1.6/Enabled</li>
+        <li IfModNotActive="imranfish.xmlextensions">Mods/XML Extensions/1.6/Disabled</li>
     </v1.6>
 </loadFolders>
