@@ -215,7 +215,7 @@
         </royalAid>
         <cooldownDays Inherit="False">60</cooldownDays>
     </RoyalTitlePermitDef>
-    <RoyalTitlePermitDef MayRequire="Ludeon.Rimworld.Biotech" ParentName="DropResourcesBase">
+    <RoyalTitlePermitDef MayRequire="Ludeon.RimWorld.Biotech" ParentName="DropResourcesBase">
         <defName>RCP_CapsuleDrop</defName>
         <label>capsule drop</label>
         <description>Call for a drop of 3 archite capsules.</description>
@@ -229,7 +229,7 @@
         </royalAid>
         <cooldownDays Inherit="False">60</cooldownDays>
     </RoyalTitlePermitDef>
-    <RoyalTitlePermitDef MayRequire="Ludeon.Rimworld.Odyssey" ParentName="DropResourcesBase">
+    <RoyalTitlePermitDef MayRequire="Ludeon.RimWorld.Odyssey" ParentName="DropResourcesBase">
         <defName>RCP_GravliteDrop</defName>
         <label>gravlite drop</label>
         <description>Call for a drop of 150 gravlite panels.</description>
